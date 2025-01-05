@@ -1,3 +1,14 @@
+# Descope for Kotlin KMP port
+
+This repo is a WIP attempt to port Descope's existing Kotlin SDK to Kotlin Multiplatform. The goals
+of this port are:
+- add support for basic Descope SDK function to all Apple and JVM targets (maybe Js and WasmJs
+eventually) 
+- require the minimal amount of API changes in the original Android source set + validate this
+with https://github.com/Kotlin/binary-compatibility-validator
+- ensure OS-specific OAuth implementations are used (e.g. Apple sign-in on iOS uses native prompt
+instead of an embedded browser)
+
 # Descope SDK for Android
 
 The Descope SDK for for Android provides convenient access
